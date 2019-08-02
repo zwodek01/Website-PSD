@@ -1,0 +1,74 @@
+.services {
+    display: grid;
+    background-color: #007af3;
+    min-height: 640px;
+
+    &__container {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+        padding: 0 10px;
+        border: 2px solid red;
+
+
+        @include media-desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 1fr;
+            grid-column-gap: 280px;
+            grid-row-gap: 80px;
+        }
+
+        @include media-large-desktop {
+            padding: 0;
+        }
+    }
+
+    &__title-wrapper {
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-desktop {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+    }
+
+    &__title {
+        font-family: "Leckerli One";
+        font-size: 24px;
+        font-weight: 400;
+
+        @include media-tablet {
+            font-size: 34px;
+        }
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-family: "Montserrat - Black";
+        font-size: 35px;
+    }
+
+    &__wrapper {
+        width: 300px;
+        display: grid;
+        grid-template-rows: 55px auto;
+        grid-template-columns: 50px auto;
+        grid-column-gap: 35px;
+
+    }
+
+
+    &__text {
+        font-size: 20px;
+    }
+
+    &__description {
+        width: 210px;
+        margin-left: 85px;
+    }
+
+}

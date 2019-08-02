@@ -1,8 +1,7 @@
-.hero-section {
-    max-height: 940px;
-    background: url('../image/2-layers.png') center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about-us {
+    display: grid;
+    min-height: 530px;
+    background-color: #0081ff;
 
     &__container {
         max-width: $maxWidth;
@@ -13,29 +12,20 @@
 
         @include media-desktop {
             grid-template-columns: 1fr 1fr;
+            grid-column-gap: 130px;
         }
     }
 
     &__wrapper {
         padding: 0 10px;
-        align-self: center;
         color: #fff;
 
         @include media-large-desktop {
             padding: 0;
         }
-
-        &--hide {
-            display: none;
-
-            @include media-desktop {
-                display: block;
-            }
-
-        }
     }
 
-    &__hello {
+    &__title {
         font-family: "Leckerli One";
         font-size: 24px;
         font-weight: 400;
@@ -45,32 +35,12 @@
         }
     }
 
-    &__title {
+    &__subtitle {
+        color: #fff;
         font-family: Montserrat;
         font-size: 30px;
         font-weight: 700;
-        line-height: 48px;
-        margin: 20px 0 5px;
-
-        @include media-tablet {
-            font-size: 40px;
-            margin: 30px 0 10px;
-
-        }
-
-
-        &--color {
-            color: #0081ff;
-            font-family: "Montserrat - Bold";
-            letter-spacing: 0.75px;
-        }
-    }
-
-    &__subtitle {
-        font-family: "Montserrat - Regular";
-        font-size: 30px;
-        font-weight: 400;
-        letter-spacing: 0.54px;
+        margin: 40px 0 20px;
     }
 
     &__text {
@@ -88,15 +58,11 @@
     &__button {
         width: 129px;
         height: 36px;
-        background-color: #00aeed;
+        background-color: #3b4374;
         color: #fff;
         font-family: Lato;
         border: none;
         border-radius: 20px;
+        font-size: 16px;
     }
-
-    &__hero-image {
-        width: 100%;
-    }
-
 }
