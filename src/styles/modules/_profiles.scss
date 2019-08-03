@@ -1,0 +1,86 @@
+.profile {
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: "Leckerli One";
+        font-size: 24px;
+        color: #575757;
+
+        @include media-tablet {
+            font-size: 34px;
+        }
+    }
+
+    &__subtitle {
+        font-family: "Montserrat - Black";
+        font-size: 25px;
+
+        @include media-tablet {
+            font-size: 35px;
+        }
+    }
+
+    &__container {
+        max-width: $maxWidth;
+        margin: 0 auto;
+
+
+        @include media-tablet {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr auto;
+        }
+
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__image-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    &__image-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    &__image-3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    &__image-4 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    &__image-5 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    &__image-6 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
