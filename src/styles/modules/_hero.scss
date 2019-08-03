@@ -1,7 +1,10 @@
-.about-us {
-    display: grid;
-    min-height: 530px;
-    background-color: #0081ff;
+.hero {
+    max-height: 940px;
+    background: url('../image/2-layers.png') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
 
     &__container {
         max-width: $maxWidth;
@@ -9,23 +12,34 @@
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
+        font-family: 'Lato';
+
 
         @include media-desktop {
             grid-template-columns: 1fr 1fr;
-            grid-column-gap: 130px;
         }
     }
 
     &__wrapper {
         padding: 0 10px;
+        align-self: center;
         color: #fff;
 
         @include media-large-desktop {
             padding: 0;
         }
+
+        &--hide {
+            display: none;
+
+            @include media-desktop {
+                display: block;
+            }
+
+        }
     }
 
-    &__title {
+    &__hello {
         font-family: "Leckerli One";
         font-size: 24px;
         font-weight: 400;
@@ -35,16 +49,33 @@
         }
     }
 
-    &__subtitle {
-        color: #fff;
-        font-family: Montserrat;
+    &__title {
+        font-family: 'Montserrat';
         font-size: 30px;
         font-weight: 700;
-        margin: 40px 0 20px;
+        line-height: 48px;
+        margin: 20px 0 5px;
+
+        @include media-tablet {
+            font-size: 40px;
+            margin: 30px 0 10px;
+
+        }
+
+
+        &--color {
+            color: #0081ff;
+            letter-spacing: 0.75px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.54px;
     }
 
     &__text {
-        font-family: Lato;
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;
@@ -58,11 +89,15 @@
     &__button {
         width: 129px;
         height: 36px;
-        background-color: #3b4374;
+        background-color: #00aeed;
         color: #fff;
-        font-family: Lato;
+        font-family: 'Lato';
         border: none;
         border-radius: 20px;
-        font-size: 16px;
     }
+
+    &__hero-image {
+        width: 100%;
+    }
+
 }

@@ -1,0 +1,134 @@
+.contact {
+    background: url('../image/footer.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+
+    &__container {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        @include media-desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-large-desktop {
+            padding: 0;
+        }
+    }
+
+    &__address-wrapper {}
+
+    &__content {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-family: "Leckerli One";
+        font-size: 24px;
+        margin-bottom: 20px;
+
+        @include media-tablet {
+            font-size: 34px;
+        }
+    }
+
+    &__subtitle {
+        font-family: "Montserrat";
+        font-size: 25px;
+        font-weight: 800;
+        margin-bottom: 60px;
+
+
+        @include media-tablet {
+            font-size: 35px;
+        }
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 550px;
+
+        @include media-desktop {
+            margin: 30px 0 60px;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-column-gap: 50px;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    &__image {}
+
+    &__form {
+        align-self: center;
+
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__label {
+        font-family: 'Lato';
+        margin: 10px 0;
+    }
+
+    &__input {
+        height: 35px;
+        border-radius: 15px;
+        background-color: #2b2b2b;
+        border: none;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    &__button {
+        margin: 40px 0;
+        width: 129px;
+        height: 36px;
+        background-color: #0280f9;
+        border-radius: 15px;
+        border: none;
+        color: #fff;
+        font-family: 'Lato';
+    }
+
+    &__icons-bar {
+        display: flex;
+        justify-content: center;
+        background-color: cadetblue;
+
+        @include media-desktop {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0;
+        background-color: aqua;
+
+
+        @include media-desktop {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+    }
+}

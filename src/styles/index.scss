@@ -1,7 +1,10 @@
 @import './reset';
 @import './mixins';
 @import './variables';
-@import './modules/hero-section';
-@import './modules/about-us-section';
-@import './modules//services-section';
+@import './modules/hero';
+@import './modules/about-us';
+@import './modules//services';
 @import './modules/profiles';
+@import './modules/client';
+@import './modules/blog';
+@import './modules/contact';
