@@ -13,11 +13,3 @@ for (let i = 0; i < link.length; i++) {
         list.classList.add('hide');
     })
 }
-
-// console.log(window.pageYOffset)
-
-// function getScroll {
-//     console.log(window.pageYOffset);
-// }
-
-// getScroll();

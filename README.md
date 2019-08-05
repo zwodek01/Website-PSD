@@ -1,3 +1,17 @@
+# Simple page to learn GRID
+
+
+
+## Technologies
+Project is created with:
+
+
+-HTML
+-SCSS
+-GRID
+-JS
+-Webpack
+
 # Webpack Frontend Starterkit
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
