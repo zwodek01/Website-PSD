@@ -1,10 +1,9 @@
 # Simple page to learn GRID
 
-
+Live demo: https://website-psd.netlify.com
 
 ## Technologies
 Project is created with:
-
 
 -HTML
 -SCSS
