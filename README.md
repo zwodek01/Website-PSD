@@ -1,19 +1,19 @@
 # Simple page to learn GRID
 
-Live demo: https://website-psd.netlify.com
-
 ## Technologies
-Project is created with:
+- HTML
+- SCSS
+- GRID
+- JS
+- Webpack
 
--HTML
--SCSS
--GRID
--JS
--Webpack
+## Live Demo
+
+https://website-psd.netlify.com
+
+![Example View](https://i.imgur.com/9Xs8mBc.png)]
 
 # Webpack Frontend Starterkit
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
 
 A lightweight foundation for your next webpack based frontend project.
 
