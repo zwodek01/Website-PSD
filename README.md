@@ -11,7 +11,7 @@
 
 https://website-psd.netlify.com
 
-![Example View](https://i.imgur.com/9Xs8mBc.png)]
+![Example View](https://i.imgur.com/9Xs8mBc.png)
 
 # Webpack Frontend Starterkit
 
